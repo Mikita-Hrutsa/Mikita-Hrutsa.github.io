@@ -7,8 +7,14 @@ Hello world
         background-color: #00326E;
         font-family: "Verdana", sans-serif;
     }
+
     .embeddedServiceHelpButton .helpButton .uiButton:focus {
         outline: 1px solid #00326E;
+    }
+
+    .loadingBall {
+        background-color: #CC590A;
+    !important;
     }
 </style>
 
@@ -16,7 +22,7 @@ Hello world
 <!--<link rel="stylesheet" type="text/css" href="/css/salesforce-lightning-design-system.min.css">-->
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
-    var initESW = function(gslbBaseURL) {
+    var initESW = function (gslbBaseURL) {
         embedded_svc.settings.displayHelpButton = true; //Or false
         embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
@@ -58,7 +64,7 @@ Hello world
     if (!window.embedded_svc) {
         var s = document.createElement('script');
         s.setAttribute('src', 'https://copyright-clearance--full.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-        s.onload = function() {
+        s.onload = function () {
             initESW(null);
         };
         document.body.appendChild(s);
