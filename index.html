@@ -35,11 +35,9 @@ Hello world
     }
 </style>
 
-<!--<link rel="stylesheet" type="text/css" href="/css/salesforce-lightning-design-system.css">-->
-<!--<link rel="stylesheet" type="text/css" href="/css/salesforce-lightning-design-system.min.css">-->
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
-    var initESW = function (gslbBaseURL) {
+    var initESW = function(gslbBaseURL) {
         embedded_svc.settings.displayHelpButton = true; //Or false
         embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
@@ -62,17 +60,17 @@ Hello world
         embedded_svc.settings.entryFeature = 'LiveAgent';
 
         embedded_svc.init(
-            'https://copyright-clearance--full.sandbox.my.salesforce.com',
-            'https://copyright-clearance--full.sandbox.my.salesforce-sites.com/kb',
+            'https://copyright-clearance--cccpartial.sandbox.my.salesforce.com',
+            'https://copyright-clearance--cccpartial.sandbox.my.salesforce-sites.com/kb',
             gslbBaseURL,
-            '00D530000004euQ',
+            '00D52000000JQzr',
             'Embedded_Service',
             {
                 baseLiveAgentContentURL: 'https://c.la4-c1cs-ia4.salesforceliveagent.com/content',
-                deploymentId: '5725300000005HE',
-                buttonId: '5735300000005Uh',
+                deploymentId: '57252000000L4cu',
+                buttonId: '57352000000L4sT',
                 baseLiveAgentURL: 'https://d.la4-c1cs-ia4.salesforceliveagent.com/chat',
-                eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I530000004CeqEAE_188be8e0c8b',
+                eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I52000000Kz8bEAC_189aca2c242',
                 isOfflineSupportEnabled: false
             }
         );
@@ -80,8 +78,8 @@ Hello world
 
     if (!window.embedded_svc) {
         var s = document.createElement('script');
-        s.setAttribute('src', 'https://copyright-clearance--full.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-        s.onload = function () {
+        s.setAttribute('src', 'https://copyright-clearance--cccpartial.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+        s.onload = function() {
             initESW(null);
         };
         document.body.appendChild(s);
