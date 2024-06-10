@@ -1,0 +1,69 @@
+<html lang="en-US">
+<body>
+Hello world
+</body>
+<style type='text/css'>
+    .embeddedServiceLiveAgentStateChatAvatar .avatar {
+        padding: 3px;
+    }
+
+    .embeddedServiceSidebarButton.uiButton--inverse .label {
+        color: #00326E;
+    }
+
+    .embeddedServiceHelpButton .helpButton .uiButton {
+        background-color: #00326E;
+        font-family: "Verdana", sans-serif;
+    }
+
+    .embeddedServiceHelpButton .helpButton .uiButton:focus {
+        outline: 1px solid #00326E;
+    }
+
+    .embeddedServiceLiveAgentStateWaiting .loadingBall {
+        background-color: #CC590A;
+    }
+
+    .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item {
+        background-color: #00326E;
+        color: #FFFFFF;
+    }
+
+    .embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:hover, .embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:active, .embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:hover:active, .embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:focus, .embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:focus:hover {
+        color: #ffffff;
+        background-color: #CC590A;
+    }
+
+    .embeddedServiceSidebarDialogState #dialogTextBody {
+        font-family: 'Calibri', sans-serif;
+    }
+
+    .embeddedServiceLiveAgentStateWaiting .waitingGreeting, .embeddedServiceLiveAgentStateWaiting .waitingMessage {
+        font-family: 'Calibri', sans-serif;
+    }
+    .waitingGreeting{
+        display: none;
+    }
+</style>
+<script type='text/javascript'>
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+            embeddedservice_bootstrap.init(
+                '00DDP0000060kTH',
+                'Bot_for_RLSC',
+                'https://copyright-clearance--full.sandbox.my.site.com/ESWBotforRLSC1716887874305',
+                {
+                    scrt2URL: 'https://copyright-clearance--full.sandbox.my.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    };
+</script>
+<script type='text/javascript' src='https://copyright-clearance--full.sandbox.my.site.com/ESWBotforRLSC1716887874305/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+
+</html>
