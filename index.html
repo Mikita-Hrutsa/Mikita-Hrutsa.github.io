@@ -67,12 +67,31 @@ Hello world
         //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
         //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
         //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-        embedded_svc.settings.extraPrechatFormDetails = [{
-            "label": "Referring URL",
-            "value": "qqqqqqqqqqqqqqqwwwwwwwwwwwwwwwww",
-            "transcriptFields": ["Referring_URL__c"],
-            "displayToAgent": true
-        }];
+        embedded_svc.settings.extraPrechatFormDetails =
+            [{
+                "label": "Referring URL",
+                "value": "Referring URL",
+                "transcriptFields": ["Referring_URL__c"],
+                "displayToAgent": true
+            },
+                {
+                    "label": "First Name",
+                    "value": "First Nam",
+                    "transcriptFields": ["First_Name__c"],
+                    "displayToAgent": true
+                },
+                {
+                    "label": "Last Name",
+                    "value": "Last_Name__c",
+                    "transcriptFields": ["Last_Name__c"],
+                    "displayToAgent": true
+                },
+                {
+                    "label": "Email",
+                    "value": "Email__c",
+                    "transcriptFields": ["Email__c"],
+                    "displayToAgent": true
+                }];
 
         embedded_svc.settings.enabledFeatures = ['LiveAgent'];
         embedded_svc.settings.entryFeature = 'LiveAgent';
