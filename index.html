@@ -98,6 +98,22 @@ Hello world
         embedded_svc.settings.enabledFeatures = ['LiveAgent'];
         embedded_svc.settings.entryFeature = 'LiveAgent';
 
+        // embedded_svc.init(
+        //     'https://copyright-clearance--full.sandbox.my.salesforce.com',
+        //     'https://copyright-clearance--full.sandbox.my.salesforce-sites.com/kb',
+        //     gslbBaseURL,
+        //     '00DDP0000060kTH',
+        //     'Ringgold_Chat',
+        //     {
+        //         baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/content',
+        //         deploymentId: '572DP000000L0S1',
+        //         buttonId: '573DP000000L0dI',
+        //         baseLiveAgentURL: 'https://d.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/chat',
+        //         eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IDP000000Kyyz2AC_18aa7a2833d',
+        //         isOfflineSupportEnabled: false
+        //     }
+        // );
+        //};
         embedded_svc.init(
             'https://copyright-clearance--full.sandbox.my.salesforce.com',
             'https://copyright-clearance--full.sandbox.my.salesforce-sites.com/kb',
@@ -106,14 +122,15 @@ Hello world
             'Ringgold_Chat',
             {
                 baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/content',
-                deploymentId: '572DP000000L0S1',
-                buttonId: '573DP000000L0dI',
+                deploymentId: '5720c0000004aDL',
+                buttonId: '5730c0000004aPA',
                 baseLiveAgentURL: 'https://d.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/chat',
                 eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IDP000000Kyyz2AC_18aa7a2833d',
                 isOfflineSupportEnabled: false
             }
         );
     };
+
 
     if (!window.embedded_svc) {
         var s = document.createElement('script');
