@@ -75,24 +75,24 @@ Hello world
                     "transcriptFields": ["Referring_URL__c"],
                     "displayToAgent": true
                 },
-                {
-                    "label": "First Name",
-                    "value": "Vasya",
-                    "transcriptFields": ["First_Name__c"],
-                    "displayToAgent": true
-                },
-                {
-                    "label": "Last Name",
-                    "value": "pupkin",
-                    "transcriptFields": ["Last_Name__c"],
-                    "displayToAgent": true
-                },
-                {
-                    "label": "Email",
-                    "value": "email@aaa.com",
-                    "transcriptFields": ["Email__c"],
-                    "displayToAgent": true
-                }
+                // {
+                //     "label": "First Name",
+                //     "value": "Vasya",
+                //     "transcriptFields": ["First_Name__c"],
+                //     "displayToAgent": true
+                // },
+                // {
+                //     "label": "Last Name",
+                //     "value": "pupkin",
+                //     "transcriptFields": ["Last_Name__c"],
+                //     "displayToAgent": true
+                // },
+                // {
+                //     "label": "Email",
+                //     "value": "email@aaa.com",
+                //     "transcriptFields": ["Email__c"],
+                //     "displayToAgent": true
+                // }
             ];
 
         embedded_svc.settings.enabledFeatures = ['LiveAgent'];
@@ -131,7 +131,6 @@ Hello world
         );
     };
 
-
     if (!window.embedded_svc) {
         var s = document.createElement('script');
         s.setAttribute('src', 'https://copyright-clearance--full.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
@@ -142,8 +141,6 @@ Hello world
     } else {
         initESW('https://service.force.com');
     }
-
-
 </script>
 
 </html>
