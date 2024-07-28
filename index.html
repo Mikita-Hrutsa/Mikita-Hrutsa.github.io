@@ -83,17 +83,17 @@ Hello world
         embedded_svc.settings.enabledFeatures = ['LiveAgent'];
         embedded_svc.settings.entryFeature = 'LiveAgent';
         embedded_svc.init(
-            'https://copyright-clearance--full.sandbox.my.salesforce.com',
-            'https://copyright-clearance--full.sandbox.my.salesforce-sites.com/kb',
+            'https://copyright-clearance--mikitadev.sandbox.my.salesforce.com',
+            'https://copyright-clearance--mikitadev.sandbox.my.salesforce-sites.com/kb',
             gslbBaseURL,
-            '00DDP0000060kTH',
-            'RLSC_Embedded_Chat',
+            '00DVA000001SzKv',
+            'RLSC_embedded_chat',
             {
                 baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/content',
-                deploymentId: '572Ru00000362DV',
-                buttonId: '573Ru000000mtdJ',
+                deploymentId: '572Rm000000adfZ',
+                buttonId: '573Rm00000029bt',
                 baseLiveAgentURL: 'https://d.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/chat',
-                eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IRu000000ESZ7MAO_190c5bcd018',
+                eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IRm0000006ZCnMAM_190c1e4e8c4',
                 isOfflineSupportEnabled: false
             }
         );
@@ -101,8 +101,8 @@ Hello world
 
     if (!window.embedded_svc) {
         var s = document.createElement('script');
-        s.setAttribute('src', 'https://copyright-clearance--full.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-        s.onload = function () {
+        s.setAttribute('src', 'https://copyright-clearance--mikitadev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+        s.onload = function() {
             initESW(null);
         };
         document.body.appendChild(s);
